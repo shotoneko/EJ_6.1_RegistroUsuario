@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RegistroUsuario</string>
+    <string name="ed_nombres">Nombres</string>
+    <string name="ed_apellidos">Apellidos</string>
+    <string name="ed_email">Email</string>
+    <string name="ed_contraseña">Contraseña</string>
+    <string name="btn_crearcuenta">Crear Cuenta</string>
+
+</resources>

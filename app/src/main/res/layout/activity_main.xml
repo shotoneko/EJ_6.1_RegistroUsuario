@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="130dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/mi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ed_nombres"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/ed_nombres"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/ed_apellidos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/ed_apellidos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ed_apellidos"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/ed_email"
+            app:layout_constraintStart_toStartOf="@+id/ed_nombres"
+            app:layout_constraintTop_toBottomOf="@+id/ed_nombres" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ed_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/ed_contraseña"
+            app:layout_constraintStart_toStartOf="@+id/ed_apellidos"
+            app:layout_constraintTop_toBottomOf="@+id/ed_apellidos" />
+
+        <EditText
+            android:id="@+id/ed_contraseña"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/ed_contraseña"
+            android:inputType="numberPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btn_cuenta"
+            app:layout_constraintStart_toStartOf="@+id/ed_email"
+            app:layout_constraintTop_toBottomOf="@+id/ed_email" />
+
+        <Button
+            android:id="@+id/btn_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onClickCrear"
+            android:text="@string/btn_crearcuenta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
